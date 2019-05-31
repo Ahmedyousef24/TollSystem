@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Controller.TripsFragment"
+    android:background="@color/OrangeYellowColor">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/mainheader"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/belowheader">
+
+                <View
+                    android:id="@+id/myRectangleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/black_rectangle_header">
+                </View>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_cross"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/OrangeYellowColor"
+                    android:text="Account"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/mainheader"
+            android:layout_marginTop="-42dp">
+
+            <RelativeLayout
+                android:id="@+id/viewprofilepic"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <include layout="@layout/navigation_header" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewfirstname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewprofilepic"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimaryDark">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ontop1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="First Name"
+                        android:textColor="@color/OrangeYellowColor"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView_FN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ontop1"
+                        android:layout_marginTop="5dp"
+                        android:text="FirstName"
+                        android:textColor="@color/OrangeYellowColor" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/viewlastname"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewfirstname"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimaryDark">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ontop2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Last Name"
+                        android:textColor="@color/OrangeYellowColor"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView_LN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ontop2"
+                        android:layout_marginTop="5dp"
+                        android:text="Last Name"
+                        android:textColor="@color/OrangeYellowColor" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewphonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewlastname"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimaryDark">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ontop3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/OrangeYellowColor"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView_PN"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ontop3"
+                        android:layout_marginTop="5dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/OrangeYellowColor" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewemail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewphonenumber"
+                android:layout_marginTop="2dp"
+                android:background="@color/colorPrimaryDark">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ontop4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Adress"
+                        android:textColor="@color/OrangeYellowColor"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView_Address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ontop4"
+                        android:layout_marginTop="5dp"
+                        android:text="Address"
+                        android:textColor="@color/OrangeYellowColor" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/viewpassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/viewemail"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/black_rectangle_header">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/ontop5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Car Plate"
+                        android:textColor="@color/OrangeYellowColor"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:id="@+id/textView_CarPlate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ontop5"
+                        android:layout_marginTop="5dp"
+                        android:text="Car Plate"
+                        android:textColor="@color/OrangeYellowColor" />
+
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signOutBtn"
+                android:layout_below="@+id/viewpassword"
+                android:layout_marginTop="20dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/OrangeYellowColor"
+                android:text="Log Out"
+                android:background="@drawable/mybutton"/>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>

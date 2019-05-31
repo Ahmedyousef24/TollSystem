@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/TextAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        />
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="250dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_below="@+id/TextAddress"
+        />
+
+    <TextView
+        android:id="@+id/Textcity"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="City"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/editTextAddress">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextcity"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Textcity"
+        />
+    <TextView
+        android:id="@+id/Textzipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zip Code"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/editTextcity"
+        />
+    <EditText
+        android:id="@+id/editTextzipcode"
+        android:layout_width="250dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@+id/Textzipcode"
+        />
+
+    <TextView
+        android:id="@+id/Textcountry"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Country"
+        android:textColor="@android:color/white"
+        android:layout_below="@+id/editTextzipcode">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/editTextcountry"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Textcountry"
+        />
+
+
+</RelativeLayout>

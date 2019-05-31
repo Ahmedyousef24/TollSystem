@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Textcarplate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Car Plates"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        />
+    <EditText
+        android:id="@+id/editTextCarPlate"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_below="@+id/Textcarplate"
+        />
+</RelativeLayout>

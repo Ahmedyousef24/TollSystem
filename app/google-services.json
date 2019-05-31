@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "218899300061",
+    "firebase_url": "https://tullsystem.firebaseio.com",
+    "project_id": "tullsystem",
+    "storage_bucket": "tullsystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218899300061:android:47e781f56a9d13f2",
+        "android_client_info": {
+          "package_name": "tull.application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "218899300061-qg13u4ahe890vt6cjtnd0sh25of68i44.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tull.application",
+            "certificate_hash": "7f6bfb417c0a89af59f342ce30b9a6b5c8061ca1"
+          }
+        },
+        {
+          "client_id": "218899300061-b2t4i1qi9uk0g2a3ugkpu2n66fkhveg3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7dyWMmpZg9xdSB2lTYv4iLvuSZblD8g0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "218899300061-b2t4i1qi9uk0g2a3ugkpu2n66fkhveg3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

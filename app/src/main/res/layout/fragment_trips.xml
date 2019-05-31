@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Controller.TripsFragment"
+    android:background="@color/OrangeYellowColor">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/mainheader"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@color/colorPrimaryDark">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:id="@+id/belowheader">
+
+                <View
+                    android:id="@+id/myRectangleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/black_rectangle_header">
+                </View>
+
+                <Button
+                    android:id="@+id/button_cross"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/cross"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/button_cross"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="24sp"
+                    android:textColor="@color/OrangeYellowColor"
+                    android:text="Your Trips"
+                    />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/Button_unpaid_paid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/belowheader">
+
+                <Button
+                    android:id="@+id/PaidTrips_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paid"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/OrangeYellowColor"
+                    android:background="@null"/>
+
+                <Button
+                    android:id="@+id/UnpaidTrips_button"
+                    android:layout_width="wrap_content"
+                    android:text="UnPaid"
+                    android:layout_marginLeft="80dp"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/OrangeYellowColor"
+                    android:background="@null"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/scene_trips_container"
+            android:layout_below="@+id/mainheader"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--
+            <include layout="@layout/fragment_paidtrips" />
+            -->
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</FrameLayout>
